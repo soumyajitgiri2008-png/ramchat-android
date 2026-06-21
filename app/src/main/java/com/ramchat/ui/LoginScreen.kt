@@ -135,7 +135,8 @@ fun LoginScreen(
                             unfocusedBorderColor = BorderColor,
                             focusedLabelColor = PrimaryGradientStart,
                             unfocusedLabelColor = TextSecondary,
-                            containerColor = BackgroundCardDark
+                            focusedContainerColor = BackgroundCardDark,
+                            unfocusedContainerColor = BackgroundCardDark
                         ),
                         singleLine = true,
                         shape = RoundedCornerShape(12.dp),
@@ -155,7 +156,8 @@ fun LoginScreen(
                             unfocusedBorderColor = BorderColor,
                             focusedLabelColor = PrimaryGradientStart,
                             unfocusedLabelColor = TextSecondary,
-                            containerColor = BackgroundCardDark
+                            focusedContainerColor = BackgroundCardDark,
+                            unfocusedContainerColor = BackgroundCardDark
                         ),
                         singleLine = true,
                         shape = RoundedCornerShape(12.dp),
@@ -175,7 +177,8 @@ fun LoginScreen(
                             unfocusedBorderColor = BorderColor,
                             focusedLabelColor = PrimaryGradientStart,
                             unfocusedLabelColor = TextSecondary,
-                            containerColor = BackgroundCardDark
+                            focusedContainerColor = BackgroundCardDark,
+                            unfocusedContainerColor = BackgroundCardDark
                         ),
                         singleLine = true,
                         visualTransformation = PasswordVisualTransformation(),
@@ -192,7 +195,10 @@ fun LoginScreen(
                             }
                         },
                         enabled = isFormValid,
-                        colors = ButtonDefaults.buttonColors(containerColor = Color.Transparent),
+                        colors = ButtonDefaults.buttonColors(
+                          containerColor = Color.Transparent,
+                          disabledContainerColor = Color.Transparent
+                        ),
                         contentPadding = PaddingValues(),
                         shape = RoundedCornerShape(14.dp),
                         modifier = Modifier

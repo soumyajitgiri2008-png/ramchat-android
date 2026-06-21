@@ -8,7 +8,7 @@ import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.*
-import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.fillMaxWidth 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -328,7 +328,8 @@ fun ChatScreen(
                             unfocusedTextColor = TextPrimary,
                             focusedBorderColor = Color.Transparent,
                             unfocusedBorderColor = Color.Transparent,
-                            containerColor = BackgroundCardDark
+                            focusedContainerColor = BackgroundCardDark,
+                            unfocusedContainerColor = BackgroundCardDark
                         ),
                         shape = RoundedCornerShape(20.dp),
                         modifier = Modifier
